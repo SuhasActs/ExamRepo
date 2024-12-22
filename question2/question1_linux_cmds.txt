@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# A) Create cdac1 and cdac2 directories
+mkdir cdac1 cdac2
+
+# B) Copy cdac2 inside cdac1 directory
+cp -r cdac2 cdac1
+
+# C) Change the permission of cdac2 to only have user read and execute permission
+chmod 500 cdac1/cdac2
+
+# D) Find the number of characters in /etc/passwd file
+wc -m /etc/passwd
+
+# E) Delete cdac2 directory
+rm -r cdac1/cdac2
+
+
+chmod +x tasks.sh
+
+./tasks.sh
